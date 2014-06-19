@@ -13,7 +13,7 @@
 # limitations under the License.
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/modules/dhd.ko:system/lib/modules/dhd.ko \
-    $(LOCAL_PATH)/modules/dhd.ko:system/lib/modules/cifs.ko \
+    $(LOCAL_PATH)/modules/cifs.ko:system/lib/modules/cifs.ko \
     $(LOCAL_PATH)/modules/exfat_core.ko:system/lib/modules/exfat_core.ko \
     $(LOCAL_PATH)/modules/exfat_fs.ko:system/lib/modules/exfat_fs.ko \
     $(LOCAL_PATH)/modules/frandom.ko:system/lib/modules/frandom.ko \
@@ -28,8 +28,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ril/cbd:root/sbin/cbd \
-    $(LOCAL_PATH)/gps.xml:system/etc/gps.xml \
-    $(LOCAL_PATH)/apns/apns-conf.xml:system/etc/apns-conf.xml
+    $(LOCAL_PATH)/gps.xml:system/etc/gps.xml
+#    $(LOCAL_PATH)/apns/apns-conf.xml:system/etc/apns-conf.xml
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
